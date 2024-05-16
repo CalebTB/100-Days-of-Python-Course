@@ -44,11 +44,3 @@ if year % 4 == 0:
 else:
     print("You are not a leap year")
     
-age = int(in)
-
-
-
-
-
-
-
