@@ -1,3 +1,5 @@
+from math import gcd
+
 strVar = "Hello World"
 print(strVar)
 
@@ -18,9 +20,18 @@ print(strVar)
 # # or
 # strLength = len(input())
 # print(strLength)
+#
+# city_grew = input("What is the name of the city you grew up in? \n")
+# fav_pet = input("What was the name of your favorite dog? \n")
+#
+#
+# print("Your band name should be: " + city_grew + " " + fav_pet)
+str1 = "ABCABCD"
+str2 = "ABC"
 
-city_grew = input("What is the name of the city you grew up in? \n")
-fav_pet = input("What was the name of your favorite dog? \n")
+if (str1+str2) == (str2+str1):
+    lengthOfCommonString = gcd(len(str1), len(str2))
+    print(lengthOfCommonString)
+    print(str1[0:lengthOfCommonString])
 
-
-print("Your band name should be: " + city_grew + " " + fav_pet)
+print("")
